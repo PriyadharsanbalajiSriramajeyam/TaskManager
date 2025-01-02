@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="task-container">
+        <div class="add-task">
+            <div class="top-row">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <select id="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+            <input type="date" id="task-date">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div id="task-list"></div>
+    </div>
+
+    <!-- Professional Doodles -->
+    <div id="doodle-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/2784/2784461.png" alt="Checklist Doodle" class="doodle" style="top: 10%; left: 10%;">
+        <img src="https://cdn-icons-png.flaticon.com/512/3050/3050243.png" alt="Calendar Doodle" class="doodle" style="top: 20%; right: 15%;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2885/2885710.png" alt="Clock Doodle" class="doodle" style="bottom: 10%; left: 20%;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2777/2777629.png" alt="Lightbulb Doodle" class="doodle" style="bottom: 15%; right: 10%;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
